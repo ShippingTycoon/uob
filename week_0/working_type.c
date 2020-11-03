@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void)
+{
+    float x, y;
+
+    x = 1.0;
+    y = 2.0;
+    printf("Sum of x & y is %.0f.\n", x + y);
+    return 0;
+}

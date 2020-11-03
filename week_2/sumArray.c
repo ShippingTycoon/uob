@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void){
+
+    int a[] = {10, 12, 6, 7, 2};
+    int i;
+    int sum = 0;
+    int *p;
+
+    p = a;
+
+    for(i=0; i<5; i++){
+        /* Alternate code is sum += *(a + 1); */
+        /* Or sum += a[i]; */
+        sum +=  *p;
+        p++;
+    }
+
+    printf("%d\n", sum);
+    return 0;
+}
